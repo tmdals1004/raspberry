@@ -77,17 +77,17 @@ while(True):
     time.sleep(1)
     a = 1
     data = [{
-        'measurement' : 'pir',        
+        'measurement' : 'temp',        
         'tags':{
             'VisionUni' : '2410',
         },
         'fields':{
-            'pir' : a,
+            'temp' : a,
         }
     }]
     client = None
     try:
-        client = influxdb('localhost',8086,'root','root','pir')
+        client = influxdb('localhost',8086,'root','root','temp')
     except Exception as e:
         print "Exception" + str(e)
     if client is not None:
