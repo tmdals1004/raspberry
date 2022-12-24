@@ -9,33 +9,7 @@ void loop(){
   Serial.prinln(cds);
   }
 ```
-
-## dht 11 sensor
-```c
-#include <DHT11.h>
-int pin = A1;
-DHT11 dht11(pin);
-
-void setup(){
-  int i;
-  float humi, temp;
-  if((i = dht11.read(humi, temp)) == 0){
-    Serial.print("humidity:");
-    Serial.prinln(humi);
-    Serial.print("temperature:");
-    Serial.println(temp);
-    }
-  else{
-    Serial.print("Error:");
-    Serial.print(i);
-    }
-  delay(1000);
-}
-```
-
-
-
-```c
+```python
 #!/usr/bin/python
 
 import time
@@ -99,3 +73,30 @@ while(True):
             client.close()
     print("running influxdb OK")
 ```
+
+
+## dht 11 sensor
+```c
+#include <DHT11.h>
+int pin = A1;
+DHT11 dht11(pin);
+
+void setup(){
+  int i;
+  float humi, temp;
+  if((i = dht11.read(humi, temp)) == 0){
+    Serial.print("humidity:");
+    Serial.prinln(humi);
+    Serial.print("temperature:");
+    Serial.println(temp);
+    }
+  else{
+    Serial.print("Error:");
+    Serial.print(i);
+    }
+  delay(1000);
+}
+```
+
+
+
