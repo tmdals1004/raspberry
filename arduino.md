@@ -1,4 +1,4 @@
-## jodo sensor
+## 조도센서
 ```c
 void setup(){
   Serial.begin(9600);
@@ -9,13 +9,14 @@ void loop(){
   Serial.prinln(cds);
   }
 ```
+
 ```python
 #!/usr/bin/python
 
 import time
 import RPi.GPIO as GPIO
 import requests, json
-from influxdb import InfluxDBClient as influxdb
+from influxdb import InfluxDBClient as influxdb #influxdb사용 선언
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(4, GPIO.IN)
