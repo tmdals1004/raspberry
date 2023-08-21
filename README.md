@@ -6,7 +6,7 @@ $ sudo apt-get install ibus ibus-hangul
 $ sudo reboot
 ```
 
-# 리눅스
+# 리눅스 문법
 ```
 ls : 리스트의 줄임말,현재 경로 파일 리스트확인
 cd : 디렉토리 바꾸기
